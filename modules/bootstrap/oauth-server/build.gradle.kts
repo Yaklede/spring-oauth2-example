@@ -9,6 +9,7 @@ tasks.bootJar {
 dependencies {
     implementation(projects.modules.domain)
     implementation(projects.modules.application)
+    implementation(projects.modules.infrastructure.oauthServerInfra)
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-oauth2-authorization-server")
     implementation("org.springframework.boot:spring-boot-starter-security")

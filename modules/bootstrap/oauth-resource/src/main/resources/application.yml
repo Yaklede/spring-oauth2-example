@@ -1,2 +1,12 @@
 server:
   port: 8081
+
+spring:
+  profiles:
+    include:
+      - datasource
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8082
