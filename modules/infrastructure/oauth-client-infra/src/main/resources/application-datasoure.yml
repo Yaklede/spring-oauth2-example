@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MariaDBDialect
+  datasource:
+    url: jdbc:mariadb://localhost:23306/oauth_client
+    username: root
+    password: password
+    driver-class-name: org.mariadb.jdbc.Driver

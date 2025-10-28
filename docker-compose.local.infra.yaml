@@ -1,10 +1,20 @@
 services:
-  mariadb:
+  mariadb1:
     image: mariadb:11
-    container_name: mariadb
+    container_name: mariadb1
     restart: always
     environment:
       MARIADB_ROOT_PASSWORD: password
       MARIADB_DATABASE: oauth
     ports:
       - "3306:3306"
+
+  mariadb2:
+    image: mariadb:11
+    container_name: mariadb2
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: password
+      MARIADB_DATABASE: oauth_client
+    ports:
+      - "23306:3306"
